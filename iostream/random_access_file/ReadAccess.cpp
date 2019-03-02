@@ -4,6 +4,9 @@
 #include <cstdlib>
 #include "ClientData.h" // ClientData class def
 
+using namespace std;
+void outputLine(ostream&, const ClientData&);
+
 int main() {
        // raeading random access file
     ifstream inCredit{"credit.dat", ios::in | ios::binary};

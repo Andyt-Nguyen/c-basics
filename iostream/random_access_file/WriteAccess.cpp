@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
     ofstream outCredit{"credit.dat", ios::in | ios::out | ios::binary};
-    // writing to  random acces file
+    // writing to random acces file
     cout << "Enter account number (1 to 100, 0 to end input)\n?";
     int accountNumber;
     string lastName;

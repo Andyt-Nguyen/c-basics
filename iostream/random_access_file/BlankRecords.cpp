@@ -13,7 +13,7 @@ int main() {
     }
 
     ClientData blankClient; // constructor zeros out each data member
-    cout << "CReating file 100 blank records" << endl;
+    cout << "Creating file 100 blank records" << endl;
     // output 100 blank records to file
     for(int i{0}; i < 100; ++i) {
         outCredit.write(
