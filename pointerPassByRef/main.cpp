@@ -10,7 +10,6 @@ int main() {
     cout << sandy << endl;
     return 0;
 }
-
 /**
  * This function will only make a copy of the 
  * value rather than actually change it
