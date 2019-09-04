@@ -18,6 +18,8 @@ int main () {
         if(i == ' ') {
             vec.push_back(stoi(str));
             str={""};
+        } else if(checkIfOperator(i)) {
+            
         } else {
             str += i;
         }
