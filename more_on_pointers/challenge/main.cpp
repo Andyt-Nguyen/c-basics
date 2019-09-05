@@ -9,11 +9,25 @@ void print(const int *arr, int size) {
   cout << endl;
 }
 
+// void print(const int *arr, int size) {
+//   for(int i {0}; i < size; i++) {
+//     cout << arr[i] << " ";
+//   }
+//   cout << endl;
+// }
+
 int* applyAll(int *arr1, int size1, int *arr2, int size2) {
   int *arr = new int[size1 * size2];
-  for(int i {0}; i < size2; i++)
-    for(int j {0}; i < size1; j++)
-      *arr[i] = *arr1[i] * *arr2[j];
+  int counter { 0 };
+  for(int i {0}; i < size2; i++) {
+    int *curr = (arr + i);
+    for(int j {0}; j < size1; j++) {
+
+      *(arr + counter) = *(arr1 + j) * *(arr2 + i);
+      counter++;
+    }
+
+  }
   
   return arr;
 }
@@ -36,6 +50,8 @@ int main() {
 
   cout << "Result: ";
   print(results, results_size);
+
+  delete [] results;
 
   cout << endl;
 }
